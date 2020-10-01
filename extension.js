@@ -46,7 +46,7 @@ function activate(context) {
 		vscode.window.withProgress({
 			location: vscode.ProgressLocation.Notification,
 			title: "My Progress",
-			cancelable: true
+			cancellable: true
             		}, (progress, token) => {
 			token.onCancellationRequested(() => {
 				console.log("User canceled the long running operation");
